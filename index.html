@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solutions</title>
+
     <!-- daisyui + tailwind end -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="container mx-auto">
         <!-- navbar -->
-         <nav>
-            <div class="navbar bg-base-100">
+         <nav class="mt-6">
+            <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -37,27 +38,47 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Home <i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Justice</a>
+                  <a class="btn btn-ghost text-2xl">Justice</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Services</a></li>
+                    <li><a>Home <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Button</a>
+                  <a class="btn bg-amber-600 text-white">Free Consultation</a>
                 </div>
               </div>
          </nav>
     </header>
 
     <!-- main -->
-     <main></main>
+     <main class="container mx-auto ">
+      <section class="mt-8">
+        <div class="hero md:h-[550px] rounded-lg" style="background-image: url(images/banner.png);">
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="w-4/5 space-y-5">
+                <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <input class="py-3 rounded-lg px-3" type="search" name="search" id="" placeholder="Search your services">
+                <button class="btn bg-amber-600 border-none text-white px-5 ml-2">Search</button>
+              </div>
+            </div>
+          </div>
+      </section>
+     </main>
 
      <!-- footer -->
       <footer></footer>
